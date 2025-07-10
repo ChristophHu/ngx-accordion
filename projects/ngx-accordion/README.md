@@ -1,66 +1,63 @@
 # NgxAccordion
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
 
-## Use
-```html
-<accordion [collapsing]="collapsing">
-        <accordion-item title="Super simple Accordion" [expanded]="true">
-          <ng-template accordionContent>
-            <div class="p-4">
-              A simple and customizable accordion component made with
-              functionalities provided by angular without having to use any 3rd
-              party libraries. Ideal when you want custom basic accordion.
-            </div>
-          </ng-template>
-        </accordion-item>
-        <accordion-item>
-          <ng-template accordionHeader let-toggle="toggle">
-            <div class="flex items-center justify-between px-4 h-12 bg-purple-200">
-              <p> Custom Header <span class="text-xs text-gray-700">(with custom toggle button)</span>
-              </p>
-              <div class="flex space-x-2">
-                <button (click)="toggle()">Toggle</button>
-              </div>
-            </div>
-          </ng-template>
-          <ng-template accordionContent>
-              <div class="p-4">
-                This is a <strong>complete custom header</strong> implementation. The
-                whole header section can be customized to you liking. Toggle method
-                will be exposed which can be used to open/close the section.
-              </div>
-          </ng-template>
-        </accordion-item>
-        <accordion-item [expanded]="true">
-          <ng-template accordionTitle>
-            <div class="flex space-x-2">
-              <svg xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24" width="20" height="20">
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path
-                  d="M11 2.05V13h10.95c-.501 5.053-4.765 9-9.95 9-5.523 0-10-4.477-10-10 0-5.185 3.947-9.449 9-9.95zm2 0A10.003 10.003 0 0 1 21.95 11H13V2.05z"/>
-              </svg>
-              <p>Custom Title</p>
-            </div>
-          </ng-template>
-          <ng-template accordionContent>
-              <div class="p-4">
-                This is a simple implementation where the
-                <strong>title part is custom</strong>. The header design and the
-                button remains the same. This is best when you have to make small
-                changes to title.
-              </div>
-          </ng-template>
-        </accordion-item>
-        <accordion-item title="Disabled" [disabled]="true">
-          <ng-template accordionContent>
-            Test 3
-          </ng-template>
-        </accordion-item>
-      </accordion>
+## Code scaffolding
+
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+
+```bash
+ng generate component component-name
 ```
 
-```typescript
-collapsing = false;
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+
+```bash
+ng generate --help
 ```
+
+## Building
+
+To build the library, run:
+
+```bash
+ng build ngx-accordion
+```
+
+This command will compile your project, and the build artifacts will be placed in the `dist/` directory.
+
+### Publishing the Library
+
+Once the project is built, you can publish your library by following these steps:
+
+1. Navigate to the `dist` directory:
+   ```bash
+   cd dist/ngx-accordion
+   ```
+
+2. Run the `npm publish` command to publish your library to the npm registry:
+   ```bash
+   npm publish
+   ```
+
+## Running unit tests
+
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+
+```bash
+ng test
+```
+
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

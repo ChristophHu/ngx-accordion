@@ -11,7 +11,7 @@ describe('NgxAccordionComponent', () => {
       imports: [NgxAccordionComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(NgxAccordionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
