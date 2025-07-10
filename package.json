@@ -1,12 +1,14 @@
 {
   "name": "ngx-accordion",
-  "version": "0.0.0",
+  "version": "19.2.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "preprocess": "ng build ngx-accordion",
+    "publish": "cd dist/ngx-accordion && npm publish --access public"
   },
   "private": true,
   "dependencies": {
@@ -18,6 +20,7 @@
     "@angular/platform-browser": "^19.2.0",
     "@angular/platform-browser-dynamic": "^19.2.0",
     "@angular/router": "^19.2.0",
+    "@christophhu/ngx-github-pages-demo": "^19.2.8",
     "@tailwindcss/postcss": "^4.1.11",
     "@types/lodash-es": "^4.17.12",
     "lodash-es": "^4.17.21",
@@ -32,6 +35,7 @@
     "@angular/cli": "^19.2.7",
     "@angular/compiler-cli": "^19.2.0",
     "@types/jasmine": "~5.1.0",
+    "angular-cli-ghpages": "^2.0.3",
     "jasmine-core": "~5.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",

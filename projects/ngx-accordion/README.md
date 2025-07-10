@@ -1,63 +1,24 @@
-# NgxAccordion
+# Ngx-Accordion
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
+## Frameworks and Languages
+<p align="left">
+  <img alt="Static Badge" src="https://img.shields.io/badge/19.2.0-000000?style=for-the-badge&logo=angular&logoColor=white&label=Angular&labelColor=000000"><br>
+  <img alt="Static Badge" src="https://img.shields.io/badge/4.1.11-000000?style=for-the-badge&logo=tailwindcss&logoColor=white&label=Tailwind&labelColor=06B6D4&color=000000"><br>
+  <img alt="Static Badge" src="https://img.shields.io/badge/5.7.2-000000?style=for-the-badge&logo=typescript&logoColor=white&label=Typescript&labelColor=007ACC&color=000000">
+</p>
 
-## Code scaffolding
+## Demo
+<p align="center">
+  <a href="https://christophhu.github.io/ngx-accordion"><img src="https://github.com/ChristophHu/ChristophHu/blob/main/assets/gif/ngx-accordion.gif" width="500" alt="image" /></a>
+</p>
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Description
+This Repository contains a simple Angular library for creating an accordion component. It is designed to be lightweight and easy to use, providing a simple way to display collapsible content sections.
 
+## Installation
 ```bash
-ng generate component component-name
+npm i @christophhu/ngx-accordion
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the library, run:
-
-```bash
-ng build ngx-accordion
-```
-
-This command will compile your project, and the build artifacts will be placed in the `dist/` directory.
-
-### Publishing the Library
-
-Once the project is built, you can publish your library by following these steps:
-
-1. Navigate to the `dist` directory:
-   ```bash
-   cd dist/ngx-accordion
-   ```
-
-2. Run the `npm publish` command to publish your library to the npm registry:
-   ```bash
-   npm publish
-   ```
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Use
+The `ngx-accordion` library provides a simple way to create an accordion component in Angular applications. Watch the [demo](https://christophhu.github.io/ngx-accordion) to see it in action and the repository for the source code.

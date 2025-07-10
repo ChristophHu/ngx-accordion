@@ -1,12 +1,34 @@
 {
-  "name": "ngx-accordion",
-  "version": "0.0.1",
+  "name": "@christophhu/ngx-accordion",
+  "version": "19.2.0",
+    "description": "Angular library.",
+  "license": "MIT",
+  "author": {
+    "name": "Christoph Huschenhoefer",
+    "email": "christoph@nxt.codes"
+  },
+  "keywords": [
+    "angular",
+    "accordion",
+    "component"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christophhu/ngx-accordion.git"
+  },
+  "bugs": {
+    "url": "https://github.com/christophhu/ngx-accordion/issues"
+  },
+  "homepage": "https://github.com/christophhu/ngx-accordion#readme",
   "peerDependencies": {
     "@angular/common": "^19.2.0",
     "@angular/core": "^19.2.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  },
-  "sideEffects": false
+  }
 }
