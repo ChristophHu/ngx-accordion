@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgxAccordionComponent } from './ngx-accordion.component';
+import { NgxAccordionComponent } from './accordion.component';
 
 describe('NgxAccordionComponent', () => {
   let component: NgxAccordionComponent;

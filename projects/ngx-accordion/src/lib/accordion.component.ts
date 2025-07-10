@@ -6,12 +6,12 @@ import { memoize } from 'lodash-es'
 import { map, merge, of } from 'rxjs';
 
 @Component({
-  selector: 'ngx-accordion',
+  selector: 'accordion',
   imports: [
     CommonModule
   ],
-  templateUrl: './ngx-accordion.component.html',
-  styleUrls: ['./ngx-accordion.component.sass'],
+  templateUrl: './accordion.component.html',
+  styleUrls: ['./accordion.component.sass'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [
     trigger('contentExpansion', [
@@ -21,8 +21,8 @@ import { map, merge, of } from 'rxjs';
     ]),
   ]
 })
-export class NgxAccordionComponent {
-expanded = new Set<number>()
+export class AccordionComponent {
+  expanded = new Set<number>()
   /**
    * Decides if the single item will be open at once or not.
    * In collapsing mode, toggling one would collapse others

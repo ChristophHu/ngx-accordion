@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { AccordionComponent, AccordionContent, AccordionHeader, AccordionItem, AccordionTitle } from '../../../ngx-accordion/src/public-api';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [
+    AccordionComponent,
+    AccordionItem,
+    AccordionContent,
+    AccordionHeader,
+    AccordionTitle
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.sass'
 })
 export class AppComponent {
-  title = 'demo';
+  collapsing = false
 }
