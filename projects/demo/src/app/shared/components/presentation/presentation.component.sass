@@ -1,0 +1,30 @@
+#capture
+  border-radius: 10px
+
+:root
+    --power: linear(
+      0 0%, 0.2688 9.91%, 0.3859 15%,
+      0.4917 20.19%, 0.5865 25.5%,
+      0.6705 30.93%, 0.7441 36.51%,
+      0.8075 42.26%, 0.8593 47.98%,
+      0.9022 53.93%, 0.9366 60.13%,
+      0.963 66.67%, 0.9812 73.4%,
+      0.9929 80.76%, 0.9986 88.89%, 1 100%
+    )
+
+.presentation
+    transform-style: preserve-3d
+    transform: translate3d(0, 0, 100vmin) rotateX(calc(var(--x1, 340) * 1deg)) rotateY(calc(var(--y1, 30) * 1deg)) rotateX(calc(var(--x2, 40) * 1deg))
+    transition: transform 1s 1s var(--power)
+    scale: 1 //3.0
+
+.presentation__image
+    position: absolute
+    // top: -300px
+    // left: 250px
+
+.layer
+    position: relative
+    pointer-events: none
+    translate: 0 0 0
+    transition: translate 1s var(--power)
