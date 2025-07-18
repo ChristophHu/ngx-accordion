@@ -16,5 +16,5 @@ import { AccordionComponent, AccordionContent, AccordionHeader, AccordionItem, A
   styleUrl: './template.component.sass'
 })
 export class TemplateComponent {
-  collapsing = false
+  collapsing = true
 }
