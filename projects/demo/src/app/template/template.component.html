@@ -1,5 +1,15 @@
+<!-- <div class="mx-auto flex items-center p-16 max-sm:p-6">
+    <img class="aspect-square max-h-96 w-full mask-radial-[100%_200%] mask-radial-from-transparent mask-radial-from-15% mask-radial-to-black mask-radial-to-60% mask-radial-at-right object-cover object-top-left dark:hidden" src="/elementcapture.png" alt="light" />
+    <img class="hidden aspect-square max-h-84 w-full mask-radial-[100%_200%] mask-radial-from-transparent mask-radial-from-15% mask-radial-to-black mask-radial-to-60% mask-radial-at-right object-cover object-top-left dark:block" src="/elementcapture.png" alt="dark" />
+    <div class="font-medium max-sm:-mx-3">
+        <p class="font-mono text-xs text-blue-500 uppercase dark:text-blue-400">Speed</p>
+        <p class="mt-2 text-base whitespace-nowrap text-gray-700 dark:text-gray-300">Built for power users</p>
+        <p class="mt-1 text-sm leading-relaxed text-balance text-gray-500">Work faster than ever with our keyboard shortcuts</p>
+    </div>
+</div> -->
+
 <accordion [collapsing]="collapsing">
-  <accordion-item title="Super simple Accordion" [expanded]="false">
+  <accordion-item title="Super simple Accordion" [expanded]="true">
     <ng-template accordionContent>
       <div class="p-4">
         A simple and customizable accordion component made with
@@ -10,10 +20,10 @@
   </accordion-item>
   <accordion-item>
     <ng-template accordionHeader let-toggle="toggle">
-      <div class="flex items-center justify-between px-4 h-12 bg-gray-200">
-        <p> Custom Header <span class="text-xs text-gray-700">(with custom toggle button)</span></p>
+      <div class="flex items-center justify-between px-4 h-12">
+        <p> Custom Header <span class="text-xs text-static-gray">(with custom toggle button)</span></p>
         <div class="flex space-x-2">
-          <button class="p-2 bg-gray-100 rounded" (click)="toggle()">open/close</button>
+          <button class="p-2 bg-accent rounded" (click)="toggle()">open/close</button>
         </div>
       </div>
     </ng-template>
@@ -28,12 +38,10 @@
   <accordion-item>
       <ng-template accordionTitle>
           <div class="flex space-x-2 items-center">
-              <svg xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24" width="20" height="20">
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path d="M11 2.05V13h10.95c-.501 5.053-4.765 9-9.95 9-5.523 0-10-4.477-10-10 0-5.185 3.947-9.449 9-9.95zm2 0A10.003 10.003 0 0 1 21.95 11H13V2.05z"/>
-              </svg>
-              <p>Custom Title</p>
+            <div class="h-5 w-5">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path fill="none" d="M0 0h24v24H0z" /><path d="M11 2.05V13h10.95c-.501 5.053-4.765 9-9.95 9-5.523 0-10-4.477-10-10 0-5.185 3.947-9.449 9-9.95zm2 0A10.003 10.003 0 0 1 21.95 11H13V2.05z"/></svg>
+            </div>
+            <span>Custom Title</span>
           </div>
       </ng-template>
       <ng-template accordionContent>

@@ -27,7 +27,7 @@ export class AccordionComponent {
    * Decides if the single item will be open at once or not.
    * In collapsing mode, toggling one would collapse others
    */
-  @Input() collapsing = false
+  @Input() collapsing = true
 
   @ContentChildren(AccordionItem) items!: QueryList<AccordionItem>
 
@@ -56,13 +56,19 @@ export class AccordionComponent {
   })
 
   toggleState = (index: number) => {
-    if (this.expanded.has(index)) {
-      this.expanded.delete(index)
-    } else {
-      if (this.collapsing) {
+    if (this.collapsing) {
+      if (this.expanded.has(index)) {
+        this.expanded.delete(index)
+      } else {
         this.expanded.clear()
+        this.expanded.add(index)
       }
-      this.expanded.add(index)
+    } else {
+      if (this.expanded.has(index)) {
+        this.expanded.delete(index)
+      } else {
+        this.expanded.add(index)
+      }
     }
   }
 }
